@@ -1,0 +1,34 @@
+name: Run experiment test action
+ 
+on:
+  push:
+    # Uncomment to run only when files in the 'evals' directory change
+    # - paths:
+    #     - "evals/**"
+ 
+permissions:
+  pull-requests: write
+  contents: read
+ 
+jobs:
+  eval:
+    name: Run evals
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+ 
+      - name: Setup Node.js
+        id: setup-node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+ 
+      - name: Run Evals
+        uses: haroldorquesta/experiment-test-action@v1
+        with:
+          path: path
