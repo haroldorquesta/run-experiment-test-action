@@ -32,4 +32,5 @@ jobs:
         uses: haroldorquesta/experiment-test-action@v1
         with:
           api_key: test_api_key
+          token: ${{ secrets.GITHUB_TOKEN }}
           path: path
