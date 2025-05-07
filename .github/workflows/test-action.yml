@@ -31,4 +31,5 @@ jobs:
       - name: Run Evals
         uses: haroldorquesta/experiment-test-action@v1
         with:
+          api_key: test_api_key
           path: path
