@@ -1,7 +1,7 @@
 name: Run experiment test action
  
 on:
-  push:
+  # push:
     # Uncomment to run only when files in the 'evals' directory change
     # - paths:
     #     - "evals/**"
@@ -33,4 +33,4 @@ jobs:
         uses: haroldorquesta/experiment-test-action@v1
         with:
           api_key: test_api_key
-          path: path
+          path: test-configs
