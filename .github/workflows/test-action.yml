@@ -5,6 +5,7 @@ on:
     # Uncomment to run only when files in the 'evals' directory change
     # - paths:
     #     - "evals/**"
+  pull_request:
  
 permissions:
   pull-requests: write
