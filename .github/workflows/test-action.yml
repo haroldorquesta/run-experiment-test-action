@@ -1,11 +1,8 @@
 name: Run experiment test action
  
 on:
-  # push:
-    # Uncomment to run only when files in the 'evals' directory change
-    # - paths:
-    #     - "evals/**"
   pull_request:
+    types: [opened, synchronize]
  
 permissions:
   pull-requests: write
