@@ -1,6 +1,0 @@
-deployment_key: OpenAI
-experiment_key: deployment_experiment_3
-dataset_id: 01JVCMMH3M256HCX48JYAHCE51
-evaluators:
-  - 01JWW9VCV0T86VFEDPJ2K5YS7Q
-  - 01JWWZ7XSCKSV79MD8S9YTD288
