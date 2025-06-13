@@ -27,7 +27,7 @@ jobs:
           node-version: 20
  
       - name: Run experiments
-        uses: haroldorquesta/experiment-test-action@v1
+        uses: haroldorquesta/experiment-test-action/actions/experiment@v1
         with:
           api_key: ${{ secrets.ORQ_API_KEY }}
           path: experiments
